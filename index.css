@@ -2,6 +2,25 @@
   color: white;
 }
 
+.title {
+  text-align: center;
+  font-weight: 200;
+  font-size: 10rem;
+}
+
+.subtitle {
+  text-align: center;
+  font-weight: 200;
+  font-size: 3rem;
+  padding-bottom: 50vh;
+}
+
+.textbox {
+  background: #3a4680;
+  padding: 0 !important;
+  margin: 0 i !important;
+}
+
 body {
   background: linear-gradient(180deg, #0e183f 32.29%, #3b4782 100%);
   width: 100vw;
@@ -12,6 +31,10 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.container {
+  padding-bottom: 15rem;
 }
 
 /* .col img {

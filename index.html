@@ -10,6 +10,10 @@
 
   <link rel="stylesheet" href="index.css">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -18,14 +22,19 @@
 </head>
 
 <body>
-  <div class="container">
 
+  <div>
     <h1 class="title"> Restore</h1>
     <h2 class="subtitle">Save our oceans.</h2>
+    <!-- <img class="circle" src="/img/circle.png" alt=""> -->
+
     <div class="textbox">
-      <p>RESTORE is a gamified website aimed to raise public awareness of beach cleanups in order to combat the growing
-        threat of pollution. Through our website, users will have the opportunity to grow a community and obtain
-        achievements for finding and attending local beach cleanups.</p>
+      <div class="container">
+        <p>RESTORE is a gamified website aimed to raise public awareness of beach cleanups in order to combat the
+          growing
+          threat of pollution. Through our website, users will have the opportunity to grow a community and obtain
+          achievements for finding and attending local beach cleanups.</p>
+      </div>
     </div>
 
 
@@ -35,10 +44,10 @@
         <img class="col-8" src="./img/webpage1.png" alt="page1">
 
         <div class="col-4 section-descr">
-          <div>
+          <div class="descr-title">
             Login Page
           </div>
-          <div>
+          <div class="descr-content">
             Users can either login to an existing account or create a new account through our Sign Up link
           </div>
         </div>
@@ -49,10 +58,10 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-4 section-descr">
-          <div>
+          <div class="descr-title">
             Dashboard
           </div>
-          <div>
+          <div class="descr-content">
             Users have access to all of our main features through our Dashboard. Here users can view all of the event
             they are currently registered for, as well as view the live aquarium in the background full of fish they’ve
             earned from past events
@@ -68,10 +77,10 @@
         <img class="col-8" src="./img/page3.png" alt="page1">
 
         <div class="col-4 section-descr">
-          <div>
+          <div class="descr-title">
             Aquarium
           </div>
-          <div>
+          <div class="descr-content">
             Users have a full view of their aquarium as well as the ability to customize the tank decorations
           </div>
         </div>
@@ -82,10 +91,10 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-4 section-descr">
-          <div>
+          <div class="descr-title">
             Friends
           </div>
-          <div>
+          <div class="descr-content">
             User can easily search for and add friends, as well as look at their current friend requests.
           </div>
         </div>
@@ -98,10 +107,10 @@
         <img class="col-8" src="./img/page5.png" alt="page1">
 
         <div class="col-4 section-descr">
-          <div>
+          <div class="descr-title">
             Events
           </div>
-          <div>
+          <div class="descr-content">
             Users can search for and add upcoming events. They can user the filters to help them narrow down what event
             best fit their interests. Users can also submit a form to create and event on their own, which will then be
             reviewed by a staff memeber.
@@ -112,36 +121,48 @@
 
     <!-- TODO : video and below -->
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YTfidnyJ2TY" title="YouTube video player"
-      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <div class="d-flex justify-content-center iframe-cont">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/YTfidnyJ2TY" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
 
-    <div class="container">
-      <div class="row align-items-center">
-        <img class="col-8" src="./img/Team.png" alt="page1">
+
+    <img class="teampic" src="/img/Team.png" alt="page1">
+
+    <div class="container pt-5">
+      <div class="row project-status title">
         <div>
           Project Status
         </div>
-        <div>
+      </div>
+
+
+      <div class="row project-status">
+        <div class=" col">
           On May 14th, 2021, we will be transition our closed project to an open source project
         </div>
-        <div>
+        <div class="col">
           For any interested collaborators, please email us for further instructions
         </div>
 
-        <div>
-          <div>Important Links </div>
-          <a href="https://github.com/hshin367/Info490-Capstone">Front End</a>
-          <a href="https://github.com/ThomasLuk1/restore-functions">Back End</a>
+        <div class="col">
+          <div class="row project-status">Important Links </div>
+          <a class="row justify-content-center" href="https://github.com/hshin367/Info490-Capstone">Front End</a>
+          <a class="row justify-content-center" href="https://github.com/ThomasLuk1/restore-functions">Back End</a>
         </div>
-
-        University of Washington Information School Capstone Project WI21/SP21 Hannah Shin | Jin Son | Chris Yee |
-        Thomas Luk
-
-
       </div>
     </div>
-  </div>
+
+    <footer class="d-flex">
+      <div>
+        University of Washington Information School Capstone Project WI21/SP21 Hannah Shin | Jin Son | Chris Yee |
+        Thomas Luk
+      </div>
+
+      <div> <img src="/img//ischool-logo.png" alt="ischool logo"></div>
+
+    </footer>
 </body>
 
 </html>

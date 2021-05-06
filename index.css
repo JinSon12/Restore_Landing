@@ -1,11 +1,32 @@
 * {
   color: white;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+*:not(.circle) {
+  z-index: 3;
 }
 
 .title {
   text-align: center;
   font-weight: 200;
-  font-size: 10rem;
+  font-size: 9rem;
+  z-index: 2;
+}
+
+.content {
+  z-index: 2;
+}
+
+.circle {
+  display: inline;
+  position: absolute;
+  width: 600px;
+  height: auto;
+  z-index: 0;
+  left: -20px;
+  top: 0;
 }
 
 .subtitle {
@@ -18,12 +39,16 @@
 .textbox {
   background: #3a4680;
   padding: 0 !important;
-  margin: 0 i !important;
+  margin-bottom: 8rem;
 }
 
 body {
   background: linear-gradient(180deg, #0e183f 32.29%, #3b4782 100%);
   width: 100vw;
+}
+.teampic {
+  width: 100vw;
+  height: auto;
 }
 
 .section {
@@ -37,6 +62,16 @@ body {
   padding-bottom: 15rem;
 }
 
+.textbox .container {
+  padding: 5rem;
+}
+
+.textbox .container p {
+  font-size: 1rem;
+  font-weight: 100;
+  text-align: center;
+  margin: 0;
+}
 /* .col img {
   height: 300px;
   width: auto;
@@ -44,7 +79,7 @@ body {
 
 .section-descr {
   padding: 25px;
-  height: 200px;
+  min-height: 200px;
   max-width: 300px;
   background: radial-gradient(
     100% 99.11% at 0% 0.89%,
@@ -56,4 +91,60 @@ body {
   backdrop-filter: blur(50px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 15px;
+}
+
+.descr-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+
+.descr-content {
+  font-weight: 200;
+}
+
+.iframe-cont {
+  position: relative;
+  display: block;
+  width: 70%; /* width of iframe wrapper */
+  height: 300px;
+  margin: auto;
+  padding: 0% 0% 43.25%; /* 16:9 ratio */
+  overflow: hidden;
+  margin-bottom: 10rem;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.project-status {
+  justify-content: center;
+  text-align: center;
+  font-weight: 200;
+}
+
+.project-status.title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-weight: 600;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #0e183f;
+  font-size: 0.8rem;
+}
+
+footer img {
+  width: auto;
+  height: 1.7rem;
 }

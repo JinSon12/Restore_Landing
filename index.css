@@ -50,6 +50,19 @@
   top: -18px;
 }
 
+.circle-md {
+  background-image: url(./img/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 200px;
+  position: absolute;
+  display: inline-block;
+  width: 200px;
+  left: 60vw;
+  top: 100px;
+  z-index: -1;
+}
+
 .subtitle {
   text-align: center;
   font-weight: 200;
@@ -62,9 +75,62 @@
 }
 
 .textbox {
+  position: relative;
   background: #3a4680;
   padding: 0 !important;
   margin-bottom: 8rem;
+}
+
+.circle-md-tb {
+  background-image: url(./img/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  left: 0vw;
+  top: 75vh;
+  z-index: -1;
+}
+
+.circle-lg {
+  background-image: url(./img/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: absolute;
+  display: inline-block;
+  width: 700px;
+  left: -350px;
+  top: 1900px;
+  z-index: -1;
+}
+
+.circle-md-login {
+  background-image: url(./img/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: absolute;
+  display: inline-block;
+  width: 300px;
+  left: 19vw;
+  top: 39vh;
+  z-index: -1;
+}
+
+.circle-5 {
+  background-image: url(./img/circle.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: absolute;
+  display: inline-block;
+  width: 700px;
+  right: -250px;
+  bottom: 600px;
+  z-index: -1;
 }
 
 body {
@@ -156,9 +222,16 @@ iframe {
   font-weight: 200;
 }
 
+.project-status-bg {
+  background-color: #212b5b;
+  width: 100vw;
+  flex-direction: column;
+  padding: 5rem 5rem 9rem 5rem;
+}
+
 .project-status.title {
   font-size: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   font-weight: 600;
 }
 

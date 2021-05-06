@@ -8,10 +8,31 @@
   z-index: 3;
 }
 
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer / Edge */
+  user-select: none;
+  /* Non-prefixed version */
+}
+
 .title {
   text-align: center;
   font-weight: 200;
   font-size: 9rem;
+  z-index: 2;
+}
+
+.whales {
+  width: 100vw;
+  height: auto;
   z-index: 2;
 }
 
@@ -22,18 +43,18 @@
 .circle {
   display: inline;
   position: absolute;
-  width: 600px;
+  width: 400px;
   height: auto;
-  z-index: 0;
+  z-index: -1;
   left: -20px;
-  top: 0;
+  top: -18px;
 }
 
 .subtitle {
   text-align: center;
   font-weight: 200;
   font-size: 3rem;
-  padding-bottom: 50vh;
+  padding-bottom: 5vh;
 }
 
 .textbox {
